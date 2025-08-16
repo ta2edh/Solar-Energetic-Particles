@@ -1,15 +1,12 @@
-# Solar Energetic Particles Analysis with time-series imaging (DMDT Mappings)
+# Time-series imaging and analysis of Solar Energetic Particles using DMDT mappings
+Solar Energetic Particles (SEPs) are a critical focus in space weather research. Not only can they disrupt terrestrial infrastructure, but their ionic charge states also provide valuable insight into solar processes. The flux data used in this work is collected by the Solar Isotope Spectrometer (SIS) aboard NASA’s Advanced Composition Explorer (ACE), made available through the ACE Science Center at Caltech.
 
-Solar Energetic Particles (SEPs) are a significant phenomenon in space weather research, as they are not only capable of disrupting infrastructure on Earth, but also provide insights into solar phenomena through their ionic charge states. All flux data collected by the Solar Isotope Spectrometer aboard NASA's ACE orbiter, courtesy of the ACE Science Center at Caltech.
+While SIS does not directly measure ionic charge states, these properties can be inferred when an energy dependence appears in the time decay constants of SEP event profiles. Such profiles additionally offer information about the underlying particle acceleration mechanisms (Sollitt et al., 2008).
 
-Although instruments like NASA’s Solar Isotope Spectrometer (SIS) aboard the Advanced Composition Explorer (ACE) do not directly measure ionic charge states, these states can be inferred if an energy-dependence exists within the time decay constants of SEP event profiles. These profiles can also yield info on the types of particle accelerations present. (Sollitt et al. (2008)).
-
-Current methods for extracting decay profiles for charge state inference involve manual and semi-automated algorithms that are time-consuming and prone to implicit bias. To solve this, we leverage machine learning techniques, specifically Multilayer Perceptrons (MLP) combined with time-series analysis methods, as well as time-series imaging techniques, such as DMDT or Gramian Angular Fields, for use with training Convolutional Neural Networks (CNNs) for classification.
-
+Traditional approaches for extracting decay profiles—used for charge state inference—rely on manual or semi-automated algorithms, which are both time-intensive and susceptible to bias. To address this, we employ machine learning techniques. Our approach combines Multilayer Perceptrons (MLPs) with time-series analysis, and applies time-series imaging methods such as Difference Matrix of Time Delays (DMDT) and Gramian Angular Fields (GAFs). These transformations enable the use of Convolutional Neural Networks (CNNs) for robust classification of SEP event characteristics.
 ---
 
-This repository contains the codebase and data for the study of decay event categorizations using **DMDT (Δt-ΔF) mappings**. DMDT mappings provide a visual and computational framework for analyzing solar energetic particle (SEP) decay events. By transforming time and flux differences into 2D histograms, this method offers a compact representation of decay dynamics, enabling classification and analysis of various decay types.  
-
+This repository hosts the codebase and datasets for studying decay event categorization using **DMDT (Δt–ΔF) mappings**. DMDT mappings offer a visual and computational framework for analyzing solar energetic particle (SEP) decay events. By converting time and flux differences into 2D histograms, this method provides a compact representation of decay dynamics, enabling efficient classification and analysis of distinct decay types.
 Unfortunately, the full project code cannot be released.
 
 ## Project Structure
